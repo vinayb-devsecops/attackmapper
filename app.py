@@ -30,5 +30,22 @@ def api_techniques():
     with open("data/techniques.json","r") as f:
         return json.load(f)
 
+
+
+@app.route("/technique/<technique_id>")
+def technique_detail(technique_id):
+
+    with open("data/techniques.json","r") as f:
+        techniques = json.load(f)
+
+    for technique in techniques:
+        if technique["technique"] == technique_id:
+            return render_template(
+                "technique_detail.html",
+                technique=technique
+            )
+
+    return {"error":"Not Found"},404
+
 if __name__ == "__main__":
     app.run(debug=True)
