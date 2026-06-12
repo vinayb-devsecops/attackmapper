@@ -1,0 +1,27 @@
+[
+  {
+    "technique": "T1190",
+    "name": "Exploit Public-Facing Application",
+    "detection": "WAF Logs"
+  },
+  {
+    "technique": "T1078",
+    "name": "Valid Accounts",
+    "detection": "Authentication Logs"
+  },
+  {
+    "technique": "T1059",
+    "name": "Command and Scripting Interpreter",
+    "detection": "Process Creation Logs"
+  },
+  {
+    "technique": "T1110",
+    "name": "Brute Force",
+    "detection": "Failed Login Monitoring"
+  },
+  {
+    "technique": "T1046",
+    "name": "Network Service Discovery",
+    "detection": "Network Scan Detection"
+  }
+]
