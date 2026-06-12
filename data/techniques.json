@@ -23,5 +23,30 @@
     "technique": "T1046",
     "name": "Network Service Discovery",
     "detection": "Network Scan Detection"
+  },
+  {
+    "technique": "T1566",
+    "name": "Phishing",
+    "detection": "Email Security Logs"
+  },
+  {
+    "technique": "T1055",
+    "name": "Process Injection",
+    "detection": "EDR Telemetry"
+  },
+  {
+    "technique": "T1021",
+    "name": "Remote Services",
+    "detection": "Remote Access Monitoring"
+  },
+  {
+    "technique": "T1486",
+    "name": "Data Encrypted for Impact",
+    "detection": "Ransomware Detection Rules"
+  },
+  {
+    "technique": "T1082",
+    "name": "System Information Discovery",
+    "detection": "Process Monitoring"
   }
 ]
