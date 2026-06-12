@@ -18,10 +18,15 @@ def home():
             or search.lower() in t["name"].lower()
         ]
 
+    stats = {
+        "total_techniques": len(techniques)
+    }
+
     return render_template(
         "index.html",
         techniques=techniques,
-        search=search
+        search=search,
+        stats=stats
     )
 
 @app.route("/api/techniques")
